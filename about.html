@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Про автора - Веб-каталог інтерактивних ресурсів</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-section {
+            padding: 80px 5%;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .about-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 1.2rem;
+            border: 4px solid #007BFF;
+        }
+
+        .about-name {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .about-role {
+            font-size: 1.2rem;
+            color: #007BFF;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .about-bio {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .contact-link:hover {
+            color: #007BFF;
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+        }
+        /* Dark background for rain atmosphere */
+        body {
+            background: #1a1a2e !important;
+        }
+
+        /* Rain canvas */
+        #rain-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 2;
+            pointer-events: none;
+            display: block;
+        }
+
+        /* Ensure content stays above rain */
+        header {
+            position: relative;
+            z-index: 10;
+        }
+
+        .about-section {
+            position: relative;
+            z-index: 5;
+        }
+
+        footer {
+            position: relative;
+            z-index: 10;
+        }
+
+        .about-container {
+            background: rgba(255, 255, 255, 0.93);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Rain Effect Layer -->
+    <canvas id="rain-canvas"></canvas>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                <img class="logo-img" src="Images/09d65b92-3e5b-4f97-bb08-4dc8affe7db7.png" alt="Логотип">
+                <div class="logo-text">Веб-каталог</div>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Головна</a></li>
+                <li><a href="index.html#resources">Ресурси</a></li>
+                <li><a href="index.html#techniques">Техніки роботи</a></li>
+                <li><a href="index.html#examples">Приклади</a></li>
+                <li><a href="about.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        
+        <div class="about-container">
+            <img class="about-photo" src="Images/photo_2026-06-22_20-57-11.jpg" alt="Моє фото">
+            
+            <h1 class="about-name">Самур Олексій Юрійович</h1>
+            <div class="about-role">Автор ресурсу</div>
+            
+            <div class="about-bio">
+                <p>Місце навчання: Ізмаїльський державний гуманітарний університет (група 42у).</p>
+                <br>
+                <p>Факультет: Управління, адміністрування та інформаційної діяльності</p><br>
+                <p>Освітня програма: 014.09 Середня освіта: Інформатика. Інтернет-технології та веб-дизайн в освіті</p>
+                <p>Форма навчання: денна</p>
+                <p>Курс: 4</p>
+                <p><strong>Адреса:</strong> вулиця Рєпіна, 12, Ізмаїл, Одеська область, 68610</p>
+            </div>
+
+            <h3>Зв'яжіться зі мною</h3>
+            <br>
+            <div class="contact-info">
+                <a href="mailto:samur.oleksei@gmail.com" class="contact-link">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    samur.oleksei@gmail.com
+                </a>
+                <a href="https://idgu.edu.ua/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                    Сайт університету — ІДГУ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Веб-каталог інтерактивних ресурсів
+        </p>
+    </footer>
+
+    <script>
+    // ===== RAIN ANIMATION =====
+    (function() {
+        const canvas = document.getElementById('rain-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let W, H;
+        function resize() {
+            W = canvas.width = window.innerWidth;
+            H = canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        // --- Rain Drop class ---
+        class Drop {
+            constructor(layer) {
+                this.layer = layer; // 0 = far, 1 = mid, 2 = close
+                this.reset(true);
+            }
+
+            reset(initial) {
+                const scale = 0.4 + this.layer * 0.3;
+                this.x = Math.random() * (W + 200) - 100;
+                this.y = initial ? Math.random() * -H : Math.random() * -100 - 50;
+                this.length = (15 + Math.random() * 20) * scale;
+                this.speed = (12 + Math.random() * 10) * scale;
+                this.opacity = (0.15 + Math.random() * 0.25) * scale;
+                this.thickness = (1 + Math.random() * 1.5) * scale;
+                this.wind = -1.5 + Math.random() * 0.5;
+            }
+
+            update() {
+                this.y += this.speed;
+                this.x += this.wind;
+                if (this.y > H) {
+                    // Create splash at bottom
+                    if (this.layer >= 1 && Math.random() < 0.3) {
+                        createSplash(this.x, H - 2);
+                    }
+                    this.reset(false);
+                }
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.moveTo(this.x, this.y);
+                ctx.lineTo(this.x + this.wind * 2, this.y + this.length);
+                ctx.strokeStyle = `rgba(174, 194, 224, ${this.opacity})`;
+                ctx.lineWidth = this.thickness;
+                ctx.lineCap = 'round';
+                ctx.stroke();
+            }
+        }
+
+        // --- Splash particle class ---
+        class Splash {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.vx = (Math.random() - 0.5) * 4;
+                this.vy = -Math.random() * 3 - 1;
+                this.radius = Math.random() * 1.5 + 0.5;
+                this.life = 1;
+                this.decay = 0.02 + Math.random() * 0.03;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                this.vy += 0.15; // gravity
+                this.life -= this.decay;
+            }
+
+            draw() {
+                if (this.life <= 0) return;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(174, 194, 224, ${this.life * 0.6})`;
+                ctx.fill();
+            }
+        }
+
+        // --- Lightning ---
+        let lightningAlpha = 0;
+        let lightningTimer = 0;
+
+        function triggerLightning() {
+            lightningAlpha = 0.15 + Math.random() * 0.15;
+            lightningTimer = 3 + Math.floor(Math.random() * 3);
+        }
+
+        // --- State ---
+        const drops = [];
+        const splashes = [];
+
+        // Create drops: 3 layers (far, mid, close)
+        const layerCounts = [120, 80, 40]; // far has most, close has fewest
+        for (let layer = 0; layer < 3; layer++) {
+            for (let i = 0; i < layerCounts[layer]; i++) {
+                drops.push(new Drop(layer));
+            }
+        }
+
+        function createSplash(x, y) {
+            const count = 3 + Math.floor(Math.random() * 4);
+            for (let i = 0; i < count; i++) {
+                splashes.push(new Splash(x, y));
+            }
+        }
+
+        // --- Animation loop ---
+        let frameCount = 0;
+
+        function animate() {
+            ctx.clearRect(0, 0, W, H);
+
+            // Lightning flash
+            if (lightningAlpha > 0) {
+                ctx.fillStyle = `rgba(200, 210, 255, ${lightningAlpha})`;
+                ctx.fillRect(0, 0, W, H);
+                lightningTimer--;
+                if (lightningTimer <= 0) {
+                    lightningAlpha *= 0.5;
+                    if (lightningAlpha < 0.01) lightningAlpha = 0;
+                }
+            }
+
+            // Random lightning every ~8-15 seconds
+            frameCount++;
+            if (frameCount % 600 === 0 && Math.random() < 0.4) {
+                triggerLightning();
+            }
+
+            // Update & draw drops (back to front)
+            for (let i = 0; i < drops.length; i++) {
+                drops[i].update();
+                drops[i].draw();
+            }
+
+            // Update & draw splashes
+            for (let i = splashes.length - 1; i >= 0; i--) {
+                splashes[i].update();
+                splashes[i].draw();
+                if (splashes[i].life <= 0) {
+                    splashes.splice(i, 1);
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    })();
+    </script>
+
+</body>
+
+</html>

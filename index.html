@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Веб-каталог інтерактивних ресурсів</title>
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="Images/09d65b92-3e5b-4f97-bb08-4dc8affe7db7.png" alt="Логотип">
+            <div class="logo-text">Веб-каталог</div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#resources">Ресурси</a></li>
+                <li><a href="#techniques">Техніки роботи</a></li>
+                <li><a href="#examples">Приклади</a></li>
+                <li><a href="about.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>
+                Індивідуальне практичне завдання на тему "Веб-каталог інтернет-ресурсів для створення
+                інтерактивних завдань"
+            </h1>
+
+            <p>
+                На цьому сайті ви зможете ознайомитися з різноманітними інтернет-ресурсами для створення інтерактивних
+                завдань, а також з технікою роботи у середовищі і готовими прикладами
+            </p>
+        </div>
+
+        <img class="hero-img" src="Images/Sajt-katalog-i-internet-magazin-Sajt-katalog-i-internet-magazin-1024x477.jpg">
+
+    </section>
+    <section class="slider-section">
+        <div class="slider">
+            <img class='slider-img' src="Images/images1.jpg" />
+            <img class='slider-img' src="Images/images2.jpg" />
+            <img class='slider-img' src="Images/images3.jpg" />
+            <img class='slider-img' src="Images/images4.jpg" />
+            <img class='slider-img' src="Images/images5.jpg" />
+
+            <div class="prev controlls"
+                style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); z-index: 10; font-size: 30px; cursor: pointer; background: rgba(255,255,255,0.7); padding: 5px 10px; border-radius: 5px; user-select: none;">
+                &#10094;</div>
+            <div class="next controlls"
+                style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); z-index: 10; font-size: 30px; cursor: pointer; background: rgba(255,255,255,0.7); padding: 5px 10px; border-radius: 5px; user-select: none;">
+                &#10095;</div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources">
+
+        <h2 class="blog-item element-animation ">Інтернет-ресурси</h2>
+
+        <div class="cards-container">
+
+            <div class="card">
+                <img class="card-img" src="Images/ikon5.jpg">
+                <div class="blog-item element-animation">
+                    <h3>LearningApps</h3>
+
+                    <p>
+                        Платформа для створення інтерактивних вправ.
+                    </p>
+                </div>
+                <div class="card-more">
+                    LearningApps — це онлайн-сервіс, розроблений у Німеччині, який дозволяє безкоштовно створювати та
+                    використовувати інтерактивні вправи у різних форматах. Його головна перевага — універсальність.
+                    Платформа підходить для різних рівнів підготовки та може бути корисною як у шкільному, так і в
+                    корпоративному навчанні.<br>
+
+                    <p>Сервіс дає змогу створювати вправи за допомогою вбудованих шаблонів або використовувати готові
+                        варіанти. Велика бібліотека завдань LearningApps дозволяє вибрати з понад 20 форматів: тестів,
+                        ігор, інтерактивних уроків на зіставлення або відновлення порядку. Вправи зручно згруповані за
+                        темами, предметами та рівнями знань.</p>
+
+                    <p>Користувачі сервісу можуть вибрати одну з 21 мов, зокрема LearningApps доступний і російською
+                        мовою. Навчитися працювати з сервісом нескладно: він інтуїтивно зрозумілий і містить підказки.
+                        Готові вправи можна використовувати й без реєстрації, а для створення власних завдань потрібно
+                        створити обліковий запис, що займе всього кілька хвилин. Сервіс підтримує вбудовані медіаформати
+                        — можна додавати відео, аудіо та озвучувати текст. Результати можна додавати до блогів,
+                        розсилок, LMS-систем (наприклад, «Еквіо») або ділитися ними за допомогою посилань і QR-кодів. Це
+                        робить LearningApps особливо зручним для дистанційної та змішаної освіти.</p>
+
+                </div>
+                <div class="card-buttons">
+                    <button class="blog-item element-animation">Детальніше</button>
+                    <a href="https://learningapps.org/" target="_blank" class="card-link element-animation">Перейти на
+                        сайт</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/ikon4.jpg" class="card-img">
+                <div class="blog-item element-animation">
+                    <h3>Wordwall</h3>
+
+                    <p>
+                        Платформа для створення інтерактивних навчальних ігор.
+                    </p>
+                    <div class="card-more">
+                        <p>Wordwall - багатофункціональний інструмент для створення як інтерактивних, так і друкованих
+                            матеріалів. Інтерактивні вправи відтворюються на будь-якому пристрої, що має доступ до
+                            інтернету: на комп'ютері, планшеті, телефоні або інтерактивній дошці.</p>
+
+                        <p>Сервіс пропонує багато шаблонів, за допомогою яких можна створити дидактичні ігри. Навіть у
+                            безкоштовній версії ви отримуєте доступ до великого арсеналу ігор Ви можете використовувати
+                            наявні версії гри або почати її створення з нуля. Є текстовий редактор, за допомогою якого
+                            використовуємо різні варіанти введення шрифту (жирний, підрядковий, надрядковий), вставляємо
+                            символ або математичну формулу.</p>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <button class="element-animation">Детальніше</button>
+                    <a href="https://wordwall.net/" target="_blank" class="card-link element-animation">Перейти на
+                        сайт</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/ikon3.jpg" class="card-img">
+                <div class="blog-item element-animation">
+                    <h3>Quizizz</h3>
+
+                    <p>
+                        Платформа для створення інтерактивних вікторин, тестів і навчальних ігор.
+                    </p>
+                </div>
+                <div class="card-more">
+                    Quizizz - це інструмент гри-орієнтованого навчання, який ви можете використовувати, щоб залучити
+                    студентів до глибокого і значущого навчального процесу.<br>
+
+                    Використовуючи редактор Quizizz, ви легко можете створити власні тести, вбудовуючи різні типи питань
+                    (багатовибірні, відкриті, опитування, заповнення пропусків тощо) та медіа-матеріали (зображення,
+                    відео, аудіо- та голосові записи).<br>
+
+                    З іншого боку, ви можете скористатись бібліотекою Quizizz, щоб знайти тисячі готових тестів та
+                    уроків з різних предметів та рівнів складності. Ви можете адаптувати ці тести до своїх потреб,
+                    редагувати їх на свій смак, імпортувати питання прямо<br>
+
+
+                </div>
+                <div class="card-buttons">
+                    <button class="element-animation">Детальніше</button>
+                    <a href="https://quizizz.com/" target="_blank" class="card-link element-animation">Перейти на
+                        сайт</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/ikon2.jpg" class="card-img">
+                <div class="blog-item element-animation">
+                    <h3>Kahoot!</h3>
+
+                    <p>
+                        Осітня платформа що використовується для створення інтерактивних тестів.
+                    </p>
+                </div>
+                <div class="card-more">
+                    Kahoot - онлайн-платформа, що дозволяє створювати та обмінюватися навчальними вікторинами,
+                    опитуваннями та тестами. Kahoot був розроблений для інтерактивного колективного чи індивідуального
+                    навчання. Сервіс доступний на ПК та мобільних пристроях за допомогою спеціальної програми.<br>
+
+                    Сервіс підходить для:<br>
+
+                    Групового та дистанційного навчання викладачів та учнів;<br>
+                    створення інтерактивних презентацій для роботи;<br>
+                    Домашнє навчання під час сімейного відпочинку.<br>
+                </div>
+                <div class="card-buttons">
+                    <button class="element-animation">Детальніше</button>
+                    <a href="https://kahoot.com/" target="_blank" class="card-link element-animation">Перейти на
+                        сайт</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/canva_icon_220714.webp" class="card-img">
+
+                <div class="blog-item element-animation">
+                    <h3>Canva</h3>
+
+                    <p>
+                        Платформа для графічного дизайну.
+                    </p>
+                </div>
+                <div class="card-more">
+                    Canva – це платформа графічного дизайну, яка дозволяє користувачам створювати графіку, презентації,
+                    афіші та іншу візуалізацію.<br>
+                    Зручна тим, що доступна як веб версія, так і мобільна. Сервіс пропонує великий банк зображень,
+                    шрифтів, шаблонів, ілюстрацій та інструментів для творчості.<br>
+                    Canva допомагає підтримувати тісний зв'язок з учнями. Для дітей, які навчаються віддалено, ми можемо
+                    створити презентацію або урок, додати свій голос і відправити матеріал, що вийшов, або поділитися
+                    ним у вигляді посилання.<br>
+                    Завдяки цій платформі учасники освітнтого процесу отримують всі переваги функцій, таких як мільйони
+                    зображень, шрифтів, графіки, відео, анімації та шаблонів.
+                </div>
+
+                <div class="card-buttons">
+                    <button class="element-animation">Детальніше</button>
+                    <a href="https://www.canva.com/" target="_blank" class="card-link element-animation">Перейти на
+                        сайт</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="techniques">
+
+        <h2 class="techniques-text blog-item element-animation">Техніка роботи у середовищі</h2>
+
+        <div class="cards-container">
+
+            <div class="card technique-card">
+                <img class="card-img" src="Images/ikon5.jpg">
+                <h3>LearningApps</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <a href="#" class="tech-link-btn" data-video="8u8EYrWXHsc">Відео пояснення</a>
+                <div class="card-more">
+                    <iframe loading="lazy"
+                        src="https://docs.google.com/document/d/1p4t3E7wXCxRTfRtGchLL35PAejiuJMz8/preview?usp=sharing&ouid=115906452991782213228&rtpof=true&sd=true"
+                        width="100%" height="800" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="card technique-card">
+                <img class="card-img" src="Images/ikon4.jpg">
+                <h3>Wordwall</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <a href="#" class="tech-link-btn" data-video="E0M8if7l-64">Відео пояснення</a>
+                <div class="card-more">
+                    <iframe loading="lazy"
+                        src="https://docs.google.com/document/d/1oOxRZtFFRL6SmC7nyE8k82nnh2Z8o71r/preview?usp=sharing&ouid=115906452991782213228&rtpof=true&sd=true"
+                        width="100%" height="800" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="card technique-card">
+                <img class="card-img" src="Images/ikon3.jpg">
+                <h3>Quizizz</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <a href="#" class="tech-link-btn" data-video="g1vCXvPVQSA">Відео пояснення</a>
+                <div class="card-more">
+                    <iframe loading="lazy"
+                        src="https://docs.google.com/document/d/1n1geddobRhZilaiBBtey7xT1NcMIyGsx/preview?usp=sharing&ouid=115906452991782213228&rtpof=true&sd=true"
+                        width="100%" height="800" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="card technique-card">
+                <img class="card-img" src="Images/ikon2.jpg">
+                <h3>Kahoot!</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <a href="#" class="tech-link-btn" data-video="ERB2ZSTA3ys">Відео пояснення</a>
+                <div class="card-more">
+                    <iframe loading="lazy"
+                        src="https://docs.google.com/document/d/1-8cva0kBiy7eQoMOQqBqS7cOUhxPbV_a/preview?usp=sharing&ouid=115906452991782213228&rtpof=true&sd=true"
+                        width="100%" height="800" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="card technique-card">
+                <img class="card-img" src="Images/canva_icon_220714.webp">
+                <h3>Canva</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <a href="#" class="tech-link-btn" data-video="8nuvG15pFs0">Відео пояснення</a>
+                <div class="card-more">
+                    <iframe loading="lazy"
+                        src="https://docs.google.com/document/d/1BXK3JhUuHNFcrExiz5L0VLXJ6waqEVPX/preview?usp=sharing&ouid=115906452991782213228&rtpof=true&sd=true"
+                        width="100%" height="800" frameborder="0"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section id="examples">
+
+        <h2 class="blog-item element-animation">Приклади інтерактивних завдань</h2>
+
+        <div class="example-cards cards-container">
+
+            <div class="card example-card">
+                <img class="card-img" src="Images/ikon5.jpg">
+                <h3>LearningApps</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="card-more">
+                    <div class="example-iframe-wrapper">
+                        <iframe loading="lazy" src="https://learningapps.org/watch?v=pyxvbcksa25"
+                            style="border:0px;width:100%;height:800px" allowfullscreen="true"
+                            webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card example-card">
+                <img class="card-img" src="Images/ikon4.jpg">
+                <h3>Wordwall</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="card-more">
+                    <div class="example-iframe-wrapper">
+                        <iframe loading="lazy"
+                            src="https://wordwall.net/uk/embed/40c699601ede4b6b855d4a5a015f7e43?themeId=1&templateId=46&fontStackId=0"
+                            style="width:100%;height:800px" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card example-card">
+                <img class="card-img" src="Images/ikon3.jpg">
+                <h3>Quizizz</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="card-more">
+                    <div class="example-iframe-wrapper">
+                        <iframe loading="lazy" src="https://wayground.com/embed/quiz/6a3975f91751f84012522b3a"
+                            title="Quizizz - Wayground" style="width:100%;height:800px" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card example-card">
+                <img class="card-img" src="Images/ikon2.jpg">
+                <h3>Kahoot!</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="card-more" style="flex-direction: column;">
+                    <div class="example-iframe-wrapper">
+                        <iframe loading="lazy"
+                            src="https://play.kahoot.it/v2/gameblock?quizId=b0eb290f-ba91-4d03-8cd3-c56a03e83226"
+                            style="width:100%;height:800px" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://create.kahoot.it/details/2/b0eb290f-ba91-4d03-8cd3-c56a03e83226?drawer="
+                        target="_blank"
+                        style="display:block; margin-top: 15px; color: #007BFF; font-weight: bold; text-decoration: none;">Перейти
+                        до деталей Kahoot!</a>
+                </div>
+            </div>
+
+            <div class="card example-card">
+                <img class="card-img" src="Images/canva_icon_220714.webp">
+                <h3>Canva</h3>
+                <div class="expand-btn">
+                    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+                <div class="card-more">
+                    <div class="example-iframe-wrapper">
+                        <iframe loading="lazy"
+                            src="https://www.canva.com/design/DAHNUYYeNQA/ogOIf1SUFYWCelhrhm5oWA/view?embed"
+                            style="width:100%;height:800px" frameborder="0" allowfullscreen="allowfullscreen"
+                            allow="fullscreen"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="contacts">
+
+        <p>
+            © 2026 Веб-каталог інтерактивних ресурсів
+        </p>
+
+    </footer>
+
+
+    <button id="scrollToTopBtn" title="Наверх">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <button class="close-video-btn">&times;</button>
+            <iframe id="videoIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
